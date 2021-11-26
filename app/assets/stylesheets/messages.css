@@ -11,12 +11,39 @@
 .side-header{
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-left-header a{
+  color: #fafafa;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.side-right-header a{
+  color: deepskyblue;
+  font-size: 10px;
+  padding:14px;
+  border:1px solid lightblue;
+  text-decoration: none;
 }
 
 .side-contents{
   height: calc(100% - 100px);
   background-color: #2F3E51;
   padding: 0 20px;
+  overflow: scroll;
+}
+
+.chat-room{
+  padding:20px 20px 40px;
+}
+
+.room-name a{
+  color: white;
+  text-decoration: none;
 }
 
 .main-chat{;
