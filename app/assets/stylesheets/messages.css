@@ -86,12 +86,12 @@
   margin-bottom: 40px;
 }
 
-.name-date{
+.upper-message{
   display: flex;
   padding: 10px 0;
 }
 
-.message-name{
+.message-user{
   font-size: 16px;
   color: #434A54;
 }
@@ -101,7 +101,7 @@
   margin-left: 10px;
 }
 
-.message-text{
+.message-content{
   font-size: 14px;
   color: #434A54;
 }
