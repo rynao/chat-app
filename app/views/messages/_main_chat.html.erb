@@ -35,15 +35,15 @@
       </div>
     </div>
   </div>
-  <div class="main-bottom">
-    <div class="main-left-bottom">
-      <input type="text" class="chat-input" placeholder="type a message">
-      <label class="form-image">
-        <span class="image-file">画像</span>
-        <input type="file" class="hidden">
-      </label>
-    </div>
-      <input type="submit" class="submit-btn" value="送信">
-    </div>
+    <%= form_with model: [@room, @message], class: 'main-bottom', loal: true do |f| %>
+      <div class="main-left-bottom">
+        <%= f.text_field :content, class: 'chat-input', placeholder: 'type a message' %>
+        <label class="form-image">
+          <span class="image-file">画像</span>
+          <%= f.file_field :image,class: 'hidden' %>
+        </label>
+      </div>
+        <%= f.submit '送信', class: 'submit-btn' %>
+      <% end %>
   </div>
 </div>
